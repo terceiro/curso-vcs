@@ -1,0 +1,60 @@
+Sobre
+=====
+
+Este é o material do minicurso "Controle de versão e fluxo de trabalho em
+projetos de desenvolvimento de software", apresentado no V Empirical Software
+Engineering Latin American Workshop (http://www.eselaw.unifacs.br/).
+
+Compilando
+==========
+
+Para compilar basta entrar o comando `make` a partir do diretório raiz dos
+fontes.
+
+Você vai precisar ter instalado:
+
+  * GNU make (http://www.gnu.org/software/make/)
+  * LaTeX (e.g. http://www.tug.org/texlive/)
+  * Beamer (http://latex-beamer.sourceforge.net/)
+  * latex-mk (http://latex-mk.sourceforge.net/)
+  * inkscape (http://www.inkscape.org/)
+  * Ruby (http://www.ruby-lang.org/)
+
+Sendo prático:
+
+  # aptitude install make texlive latex-beamer latex-mk inkscape ruby
+
+
+Copyright
+=========
+
+Copyright © 2008, Antonio Terceiro <terceiro@{dcc.ufba.br, softwarelivre.org, colivre.coop.br}>
+
+Este material pode ser usado segundo os termos da licença CreativeCommons
+Atribuição-Uso Não-Comercial-Compartilhamento pela mesma Licença 2.5 Brasil:
+http://creativecommons.org/licenses/by-nc-sa/2.5/br/
+
+Em resumo, é permitido:
+
+  Copiar, distribuir, exibir e executar a obra
+
+  Criar obras derivadas
+
+Desde que:
+
+  Atribuição. Você deve dar crédito ao autor original, da forma especificada pelo
+  Autor ou licenciante.
+  
+  Uso Não-Comercial. Você não pode utilizar esta obra com finalidades comerciais.
+  
+  Compartilhamento pela mesma Licença. Se você alterar, transformar, ou criar
+  Outra obra com base nesta, você somente poderá distribuir a obra resultante sob
+  Uma licença idêntica a esta.
+
+Para cada novo uso ou distribuição, você deve deixar claro para outros os
+termos da licença desta obra.
+
+Qualquer uma destas condições podem ser renunciadas, desde que Você obtenha
+permissão do autor.
+
+Veja o arquivo COPYING para o conteúdo completo da licença em legalês.
