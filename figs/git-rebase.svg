@@ -160,15 +160,15 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.70428571"
      inkscape:cx="180"
-     inkscape:cy="520.3854"
+     inkscape:cy="381.75171"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
      width="1052.36px"
-     inkscape:window-width="1278"
-     inkscape:window-height="718"
+     inkscape:window-width="1280"
+     inkscape:window-height="749"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="19"
      showguides="true"
      inkscape:guide-bbox="true" />
   <metadata
@@ -530,5 +530,15 @@
        d="M 184.13697,133.75813 C 262.67023,156.19109 290.37983,190.21701 315.19063,217.83281 C 339.30388,244.67219 350.97576,248.26623 351.67143,416.00086 C 352.26601,558.14836 340.3124,549.35762 312.42912,583.53532 C 282.79018,619.86501 206.77676,648.43605 206.77676,648.43605 C 206.77676,648.43605 53.131569,710.63768 12.074555,642.39877 C 6.9323638,633.85218 -5.9720047,593.4997 24.327993,545.44456 C 51.429478,502.4622 180.0473,495.58343 206.77676,450.71521 C 233.50622,405.84699 233.33675,352.30123 202.2488,311.85782 C 171.16086,271.4144 33.280527,296.31591 19.621152,254.50368 C 6.1145908,213.15923 7.8139296,158.05949 27.16775,135.26744 C 47.255919,111.61058 106.99815,111.72348 184.13697,133.75813 z"
        id="path2531"
        sodipodi:nodetypes="czsscsszzzzz" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.93917656px;font-style:normal;font-weight:normal;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="126.32288"
+       y="109.11908"
+       id="text2458"><tspan
+         sodipodi:role="line"
+         id="tspan2460"
+         x="126.32288"
+         y="109.11908">rebase</tspan></text>
   </g>
 </svg>
