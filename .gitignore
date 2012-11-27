@@ -1,0 +1,10 @@
+figs/*-[0-9]*.*
+figs/*.png
+curso-vcs.aux
+curso-vcs.log
+curso-vcs.nav
+curso-vcs.out
+curso-vcs.pdf
+curso-vcs.snm
+curso-vcs.toc
+curso-vcs.toc.old
