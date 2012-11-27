@@ -1,7 +1,8 @@
 NAME = curso-vcs
 TEXSRCS = curso-vcs.tex
 EXTRA_DIST += animations.mk figs/animate.rb
-OTHER = figs/evolucao.png $(wildcard figs/git-screenshot-*.pdf) $(wildcard figs/logos/*)
+GENERATED_FIGS = figs/evolucao.png
+OTHER = $(wildcard figs/git-screenshot-*.pdf) $(wildcard figs/logos/*) $(GENERATED_FIGS)
 USE_PDFLATEX = 1
 
 %.png : %.svg
@@ -10,6 +11,6 @@ USE_PDFLATEX = 1
 -include animations.mk
 -include /usr/share/latex-mk/latex.gmk
 
-CLEAN_FILES += *.nav *.snm *.vrb ${OTHER}
+CLEAN_FILES += *.nav *.snm *.vrb $(GENERATED_FIGS)
 clean::
 	@echo cleaned
