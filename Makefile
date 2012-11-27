@@ -1,7 +1,7 @@
 NAME = curso-vcs
 TEXSRCS = curso-vcs.tex
 EXTRA_DIST += animations.mk figs/animate.rb
-OTHER = figs/evolucao.png $(wildcard figs/git-screenshot-*.pdf)
+OTHER = figs/evolucao.png $(wildcard figs/git-screenshot-*.pdf) $(wildcard figs/logos/*)
 USE_PDFLATEX = 1
 
 %.png : %.svg
