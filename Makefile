@@ -1,10 +1,11 @@
 NAME = curso-vcs
 TEXSRCS = curso-vcs.tex
 EXTRA_DIST += animations.mk figs/animate.rb
-OTHER = figs/evolucao.eps
+OTHER = figs/evolucao.png $(wildcard figs/git-screenshot-*.pdf)
+USE_PDFLATEX = 1
 
-%.eps : %.svg
-	inkscape -T --export-bbox-page --export-eps=$@ $<
+%.png : %.svg
+	inkscape -T --export-area-page --export-png=$@ $<
 
 -include animations.mk
 -include /usr/share/latex-mk/latex.gmk

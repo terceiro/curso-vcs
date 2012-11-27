@@ -1,16 +1,16 @@
-ANIMATION_FRAMES += $(shell seq -f 'figs/distributed-vcs-%03g.eps'         1 4)
-ANIMATION_FRAMES += $(shell seq -f 'figs/rcs-%03g.eps'                     1 5)
-ANIMATION_FRAMES += $(shell seq -f 'figs/cvs-%03g.eps'                     1 4)
-ANIMATION_FRAMES += $(shell seq -f 'figs/centralized-interaction-%03g.eps' 1 8)
-ANIMATION_FRAMES += $(shell seq -f 'figs/svn-%03g.eps'                     1 4)
-ANIMATION_FRAMES += $(shell seq -f 'figs/git-branch-merge-%03g.eps'        1 7)
-ANIMATION_FRAMES += $(shell seq -f 'figs/git-fast-forward-%03g.eps'        1 5)
-ANIMATION_FRAMES += $(shell seq -f 'figs/git-rebase-%03g.eps'              1 7)
-ANIMATION_FRAMES += $(shell seq -f 'figs/central-repository-%03g.eps'      1 6)
-ANIMATION_FRAMES += $(shell seq -f 'figs/integration-manager-%03g.eps'     1 3)
-ANIMATION_FRAMES += $(shell seq -f 'figs/dictator-and-lieutenants-%03g.eps' 1 4)
+ANIMATION_FRAMES += $(shell seq -f 'figs/distributed-vcs-%03g.png'         1 4)
+ANIMATION_FRAMES += $(shell seq -f 'figs/rcs-%03g.png'                     1 5)
+ANIMATION_FRAMES += $(shell seq -f 'figs/cvs-%03g.png'                     1 4)
+ANIMATION_FRAMES += $(shell seq -f 'figs/centralized-interaction-%03g.png' 1 8)
+ANIMATION_FRAMES += $(shell seq -f 'figs/svn-%03g.png'                     1 4)
+ANIMATION_FRAMES += $(shell seq -f 'figs/git-branch-merge-%03g.png'        1 7)
+ANIMATION_FRAMES += $(shell seq -f 'figs/git-fast-forward-%03g.png'        1 5)
+ANIMATION_FRAMES += $(shell seq -f 'figs/git-rebase-%03g.png'              1 7)
+ANIMATION_FRAMES += $(shell seq -f 'figs/central-repository-%03g.png'      1 6)
+ANIMATION_FRAMES += $(shell seq -f 'figs/integration-manager-%03g.png'     1 3)
+ANIMATION_FRAMES += $(shell seq -f 'figs/dictator-and-lieutenants-%03g.png' 1 4)
 
-ANIMATION_FRAMES_SVG = ${ANIMATION_FRAMES:.eps=.svg}
+ANIMATION_FRAMES_SVG = ${ANIMATION_FRAMES:.png=.svg}
 
 OTHER += ${ANIMATION_FRAMES_SVG} ${ANIMATION_FRAMES}
 CLEAN_FILES += ${ANIMATION_FRAMES} ${ANIMATION_FRAMES_SVG} figs/*.stamp
