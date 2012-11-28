@@ -21,3 +21,5 @@ commit-pdf: $(NAME).pdf
 	cp /tmp/$(NAME).pdf $(NAME).pdf
 	git commit -m "$(shell git log master^..master --format=%H)" $(NAME).pdf
 	git checkout master
+	cp /tmp/$(NAME).pdf $(NAME).pdf
+	touch $(NAME).pdf
