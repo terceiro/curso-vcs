@@ -14,3 +14,10 @@ USE_PDFLATEX = 1
 CLEAN_FILES += *.nav *.snm *.vrb $(GENERATED_FIGS)
 clean::
 	@echo cleaned
+
+commit-pdf: $(NAME).pdf
+	cp $(NAME).pdf /tmp/$(NAME).pdf
+	git checkout pdf
+	cp /tmp/$(NAME).pdf $(NAME).pdf
+	git commit -m "$(shell git log master^..master --format=%H)" $(NAME).pdf
+	git checkout master
