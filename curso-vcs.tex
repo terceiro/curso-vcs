@@ -444,6 +444,140 @@ desenvolvimento de software}
   \end{figure}
 \end{frame}
 
+\section[Fluxo de Trabalho]{Fluxo de trabalho em projetos de desenvolvimento de software}
+
+\begin{frame}
+  \frametitle{Objetivos}
+  \begin{itemize}
+    \item Apresentar fluxos de trabalho comumente utilizados com o
+      auxílio de sistemas de controle de versão.
+    \item Identificar quais desses fluxos podem ser implementados com
+      \begin{itemize}
+        \item sistemas de controle de versão centralizados.
+        \item sistemas de controle de versão distribuídos.
+      \end{itemize}
+    \item Discutir aplicabilidade desses fluxos a diferentes contextos,
+      suas vantagens e desvantagens.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{3 diferentes fluxos de trabalho}
+  \begin{itemize}
+    \item Repositório central
+    \item Gerente de Integração
+    \item Ditador e Tenentes
+  \end{itemize}
+\end{frame}
+
+\subsection{Repositório central}
+
+\begin{frame}
+  \frametitle{Repositório central}
+  \begin{figure}[h]
+    \begin{center}
+      \only<1>{\includegraphics[height=0.8\textheight]{figs/central-repository-001.png}}%
+      \only<2>{\includegraphics[height=0.8\textheight]{figs/central-repository-002.png}}%
+      \only<3>{\includegraphics[height=0.8\textheight]{figs/central-repository-003.png}}%
+      \only<4>{\includegraphics[height=0.8\textheight]{figs/central-repository-004.png}}%
+      \only<5>{\includegraphics[height=0.8\textheight]{figs/central-repository-005.png}}%
+      \only<6>{\includegraphics[height=0.8\textheight]{figs/central-repository-006.png}}%
+    \end{center}
+    \label{fig:centralized-repository}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Repositório central -- discussão}
+  \begin{itemize}
+    \item Aplicável com controle de versão centralizado e distribuído
+    \item Vantagens
+      \begin{itemize}
+        \item<2-> Paralelismo.
+        \item<3-> ``Simplicidade''.
+      \end{itemize}
+    \item Desvantagens
+      \begin{itemize}
+        \item<4-> Contribuições diretas dependem de permissão explícita de
+          escrita no repositório.
+        \item<5-> Sem um sistema de controle de versão distribuído, os
+          contribuidores têm dificuldades em trabalhar em mais de uma
+          funcionalidade/bug \emph{ao mesmo tempo}.
+        \item <6->Repositório central é um ponto de falha.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{Gerente de Integração}
+
+\begin{frame}
+  \frametitle{Gerente de Integração}
+  \begin{figure}[h]
+    \begin{center}
+      \only<1>{\includegraphics[height=0.8\textheight]{figs/integration-manager-001.png}}%
+      \only<2>{\includegraphics[height=0.8\textheight]{figs/integration-manager-002.png}}%
+      \only<3>{\includegraphics[height=0.8\textheight]{figs/integration-manager-003.png}}%
+    \end{center}
+    \label{fig:integration-manager}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Gerente de Integração -- discussão}
+  \begin{itemize}
+    \item Difícil de aplicar sem controle de versão distribuído.
+    \item Mais interação social entre os desenvolvedores.
+    \item A depender do contexto, o gerente de integração pode ser uma
+      máquina.
+    \item Vantagens
+      \begin{itemize}
+        \item<2-> Atividade explícita de inspeção/revisão/teste.
+        \item<3-> Maior controle sobre a base de código e sobre o design
+          do software.
+      \end{itemize}
+    \item Desvantagens
+      \begin{itemize}
+        \item<4-> Gerente de Integração é um ponto de falha.
+        \item<5-> Problemas de escala se o gerente de integração for
+          humano.
+        \item<6-> Pode ser difícil para equipes inexperientes.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{Ditador e Tenentes}
+
+\begin{frame}
+  \frametitle{Ditador e Tenentes}
+  \begin{figure}[h]
+    \begin{center}
+      \only<1>{\includegraphics[height=0.8\textheight]{figs/dictator-and-lieutenants-001.png}}%
+      \only<2>{\includegraphics[height=0.8\textheight]{figs/dictator-and-lieutenants-002.png}}%
+      \only<3>{\includegraphics[height=0.8\textheight]{figs/dictator-and-lieutenants-003.png}}%
+      \only<4>{\includegraphics[height=0.8\textheight]{figs/dictator-and-lieutenants-004.png}}%
+    \end{center}
+    \label{fig:dictator-and-lieutenants}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ditador e Tenentes -- discussão}
+  \begin{itemize}
+    \item Uma variação recursiva de ``Gerente de integração''.
+    \item Praticamente impossível sem um sistema de controle de versão
+      distribuído.
+    \item Vantagens
+      \begin{itemize}
+        \item<2-> Melhor escalabilidade para projetos grandes.
+        \item<3-> Menos pontos de falha
+      \end{itemize}
+    \item Desvantagens
+      \begin{itemize}
+        \item<4-> \ldots
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
 \section[\git]{Controle de versão distribuído com \git}
 
 \begin{frame}
@@ -784,140 +918,6 @@ desenvolvimento de software}
 % TODO git-svn + comentar integração com outros VCS's
 % bisect!
 % comentar integração com outros VCS's
-
-\section[Fluxo de Trabalho]{Fluxo de trabalho em projetos de desenvolvimento de software}
-
-\begin{frame}
-  \frametitle{Objetivos}
-  \begin{itemize}
-    \item Apresentar fluxos de trabalho comumente utilizados com o
-      auxílio de sistemas de controle de versão.
-    \item Identificar quais desses fluxos podem ser implementados com
-      \begin{itemize}
-        \item sistemas de controle de versão centralizados.
-        \item sistemas de controle de versão distribuídos.
-      \end{itemize}
-    \item Discutir aplicabilidade desses fluxos a diferentes contextos,
-      suas vantagens e desvantagens.
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \frametitle{3 diferentes fluxos de trabalho}
-  \begin{itemize}
-    \item Repositório central
-    \item Gerente de Integração
-    \item Ditador e Tenentes
-  \end{itemize}
-\end{frame}
-
-\subsection{Repositório central}
-
-\begin{frame}
-  \frametitle{Repositório central}
-  \begin{figure}[h]
-    \begin{center}
-      \only<1>{\includegraphics[height=0.8\textheight]{figs/central-repository-001.png}}%
-      \only<2>{\includegraphics[height=0.8\textheight]{figs/central-repository-002.png}}%
-      \only<3>{\includegraphics[height=0.8\textheight]{figs/central-repository-003.png}}%
-      \only<4>{\includegraphics[height=0.8\textheight]{figs/central-repository-004.png}}%
-      \only<5>{\includegraphics[height=0.8\textheight]{figs/central-repository-005.png}}%
-      \only<6>{\includegraphics[height=0.8\textheight]{figs/central-repository-006.png}}%
-    \end{center}
-    \label{fig:centralized-repository}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Repositório central -- discussão}
-  \begin{itemize}
-    \item Aplicável com controle de versão centralizado e distribuído
-    \item Vantagens
-      \begin{itemize}
-        \item<2-> Paralelismo.
-        \item<3-> ``Simplicidade''.
-      \end{itemize}
-    \item Desvantagens
-      \begin{itemize}
-        \item<4-> Contribuições diretas dependem de permissão explícita de
-          escrita no repositório.
-        \item<5-> Sem um sistema de controle de versão distribuído, os
-          contribuidores têm dificuldades em trabalhar em mais de uma
-          funcionalidade/bug \emph{ao mesmo tempo}.
-        \item <6->Repositório central é um ponto de falha.
-      \end{itemize}
-  \end{itemize}
-\end{frame}
-
-\subsection{Gerente de Integração}
-
-\begin{frame}
-  \frametitle{Gerente de Integração}
-  \begin{figure}[h]
-    \begin{center}
-      \only<1>{\includegraphics[height=0.8\textheight]{figs/integration-manager-001.png}}%
-      \only<2>{\includegraphics[height=0.8\textheight]{figs/integration-manager-002.png}}%
-      \only<3>{\includegraphics[height=0.8\textheight]{figs/integration-manager-003.png}}%
-    \end{center}
-    \label{fig:integration-manager}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Gerente de Integração -- discussão}
-  \begin{itemize}
-    \item Difícil de aplicar sem controle de versão distribuído.
-    \item Mais interação social entre os desenvolvedores.
-    \item A depender do contexto, o gerente de integração pode ser uma
-      máquina.
-    \item Vantagens
-      \begin{itemize}
-        \item<2-> Atividade explícita de inspeção/revisão/teste.
-        \item<3-> Maior controle sobre a base de código e sobre o design
-          do software.
-      \end{itemize}
-    \item Desvantagens
-      \begin{itemize}
-        \item<4-> Gerente de Integração é um ponto de falha.
-        \item<5-> Problemas de escala se o gerente de integração for
-          humano.
-        \item<6-> Pode ser difícil para equipes inexperientes.
-      \end{itemize}
-  \end{itemize}
-\end{frame}
-
-\subsection{Ditador e Tenentes}
-
-\begin{frame}
-  \frametitle{Ditador e Tenentes}
-  \begin{figure}[h]
-    \begin{center}
-      \only<1>{\includegraphics[height=0.8\textheight]{figs/dictator-and-lieutenants-001.png}}%
-      \only<2>{\includegraphics[height=0.8\textheight]{figs/dictator-and-lieutenants-002.png}}%
-      \only<3>{\includegraphics[height=0.8\textheight]{figs/dictator-and-lieutenants-003.png}}%
-      \only<4>{\includegraphics[height=0.8\textheight]{figs/dictator-and-lieutenants-004.png}}%
-    \end{center}
-    \label{fig:dictator-and-lieutenants}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Ditador e Tenentes -- discussão}
-  \begin{itemize}
-    \item Uma variação recursiva de ``Gerente de integração''.
-    \item Praticamente impossível sem um sistema de controle de versão
-      distribuído.
-    \item Vantagens
-      \begin{itemize}
-        \item<2-> Melhor escalabilidade para projetos grandes.
-        \item<3-> Menos pontos de falha
-      \end{itemize}
-    \item Desvantagens
-      \begin{itemize}
-        \item<4-> \ldots
-      \end{itemize}
-  \end{itemize}
-\end{frame}
 
 \section{Conclusões}
 
